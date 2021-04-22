@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>font</title>
+  <style>
+        html {
+            font-size:  32px;
+        }
+        p#test1 span#a{
+            font-family: "SimHei";
+            font-size: 120%;
+            color: red;
+        }
+        p#test1 span#b{
+            font-family: "KAITI";
+            font-size: 1.2em;
+            color: green;
+        }
+        p#test1 span#c{
+            font-family: "FANGSONG";
+            font-size: 1.2rem;
+            color: blue;
+        }
+        p#test1 span#d{
+            font-family: "Microsoft JhengHei";
+            font-size: xx-large;
+            color: gray;
+        }
+        p#test2 span#a{
+            font-style: italic;
+            color: green;
+            text-decoration: line-through;
+        }
+        p#test2 span#b{
+            font-weight: bold;
+            color: purple;
+            text-decoration: overline;
+        }
+        p#test2 span#c{
+            font-weight: 700;
+            color: brown;
+            text-decoration: underline;
+        }
+        p#test3 span#a{
+            text-shadow: 4px 4px 3px #888;
+            color: green;
+        }
+        p#test3 span#b{
+            font-size: 1.5em;
+            text-shadow: -5px -5px 3px #F44, 5px 5px 3px #888;
+            color: red;
+        }
+        p#test3 span#c{
+            letter-spacing: 2.5em;
+            color: brown;
+        }
+   </style>
+
+</head>
+<body>
+    <div style="font-size: 24px">
+        <p id="test1">
+            字体1：<span id="a">用120%显示字体大小</span> <span id="b">用1.2em显示字体大小</span> <span id="c">用1.2rem显示字体大小</span> <span id="d">用xx-large显示字体大小</span>
+        </p>
+        <p id="test2">
+            字体2：<span id="a">用斜体显示文字</span> <span id="b">用粗体bolder显示文字</span> <span id="c">用粗体700显示文字</span>
+        </p>
+        <p id="test3">
+            字体3：<span id="a">给文字加上阴影</span> <span id="b">给文字加上双阴影</span> <span id="c">改变字符之间的间距</span>
+        </p>
+ 
+    </div>
+</body>
+</html>
