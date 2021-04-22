@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8">
+    <title>diamond</title>
+    <style>
+        .love {
+           position: relative;
+           left:100px;
+        }
+
+        .love:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            width: 0px;
+            height: 20px;
+            border: solid 20px red;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            transform: rotate(45deg);
+        }
+
+        .love:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            width: 0px;
+            height: 20px;
+            border: solid 20px red;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            transform: rotate(-45deg);
+        }
+
+    </style>  
+</head>
+<body>
+    <div class="love"> 
+      <div class="love1"></div>
+      <div class="love2"></div>
+   </div>
+ 
+</body>
+</html>
