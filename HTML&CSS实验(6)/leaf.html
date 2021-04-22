@@ -1,0 +1,122 @@
+<!DOCTYPE  html>
+<html lang="zh-cn">
+   <head>
+      <meta charset="utf-8"/>
+      <title>This is my title</title>
+      <style>
+         .leaf {
+             width:40px;
+             height:40px;
+         }
+         #bk {
+             width:600px;
+             height:600px;
+             margin:0 auto;
+             padding:20px;
+             background-image: url('images/leaf_bk.jpg');
+         }
+
+         @keyframes anim {
+             0% {opacity: 0;}
+             10% {opacity: 1; transform: translateY(0px) rotateX(0deg) rotateY(0deg);}
+             90% {opacity: 1; transform: translateY(570px) rotateX(720deg) rotateY(720deg);}
+             100% {opacity: 0; transform: translateY(570px) rotateX(720deg) rotateY(720deg);}
+         }
+         #d1 {
+             background-image: url('images/leaf.gif');
+             background-size: contain;
+             background-repeat: no-repeat;
+             position: relative;
+             animation: anim 4s linear infinite;
+         }
+         #d2 {
+            background-image: url('images/leaf.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left:110px;
+            top:-40px;
+            opacity: 0;
+            animation: anim 4s 1s linear infinite;
+         }
+         #d3 {
+            background-image: url('images/leaf.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left:220px;
+            top:-80px;
+            opacity: 0;
+            animation: anim 4s 1.8s linear infinite;
+         }
+         #d4 {
+            background-image: url('images/leaf.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left:330px;
+            top:-120px;
+            opacity: 0;
+            animation: anim 2s 1.5s linear infinite;
+         }
+         #d5 {
+            background-image: url('images/leaf.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left:440px;
+            top:-160px;
+            opacity: 0;
+            animation: anim 4s 3s linear infinite;
+         }
+
+         #d6 {
+            background-image: url('images/leaf.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left:550px;
+            top:-200px;
+            opacity: 0;
+            animation: anim 2s 1s linear infinite;
+         }
+
+         #d7 {
+            background-image: url('images/leaf.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 660px;
+            top: -240px;
+            opacity: 0;
+            animation: anim 4s 3s linear infinite;
+         }
+         #d8 {
+            background-image: url('images/leaf.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 770px;
+            top: -280px;
+            opacity: 0;
+            animation: anim 2s 0.5s linear infinite;
+         }
+
+      </style>
+   </head>
+   <body>
+    <div id="bk">
+      <div id="d1" class="leaf"></div>
+      <div id="d2" class="leaf"></div>
+      <div id="d3" class="leaf"></div>
+      <div id="d4" class="leaf"></div>
+      <div id="d5" class="leaf"></div>
+      <div id="d6" class="leaf"></div>
+      <div id="d7" class="leaf"></div>
+      <div id="d8" class="leaf"></div>
+    </div>
+    </body>
+</html>
+         
+
+                

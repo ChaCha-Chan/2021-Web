@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>slides</title>
+    <style>
+        #slideMain {      
+            margin: auto;      
+            width: 910px;
+            height: 618px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide {
+        }
+        #s1{
+            position: absolute;
+            animation: first 8s linear infinite;
+        }
+        #s2{
+            position: absolute;
+            transform: translateX(930px);
+            animation: others 8s 1.6s linear infinite;
+        }
+        #s3{
+            position: absolute;
+            transform: translateX(930px);
+            animation: others 8s 3.6s linear infinite;
+        }
+        #s4{
+            position: absolute;
+            transform: translateX(930px);
+            animation: others 8s 5.6s linear infinite;
+        }
+        @keyframes first { 
+             0%{  transform: translateX(0); }
+             20%{  transform: translateX(0); }
+             25%{ opacity: 1; transform: translateX(-930px);}
+             26%{ opacity: 0; transform: translateX(-930px);}
+             95%{ opacity: 0; transform: translateX(930px);}
+             95%{ opacity: 1; transform: translateX(930px);}
+             100%{ transform: translateX(0px);}
+        }
+        @keyframes others { 
+             0%{ transform: translateX(930px);}
+             5%{ transform: translateX(0px);}
+             25% { transform: translateX(0); }
+             30%{ transform: translateX(-930px);}
+             100%{ transform: translateX(-930px);}
+        }
+  
+    </style>
+</head>
+<body>
+    <div id="slideMain">
+         <div class="slides">
+                 <img class="slide" id="s1" src="images/img11.jpg">
+                 <img class="slide" id="s2" src="images/img12.jpg">
+                 <img class="slide" id="s3" src="images/img13.jpg">
+                 <img class="slide" id="s4" src="images/img14.jpg">
+         </div>
+    </div>
+</body>
+</html>

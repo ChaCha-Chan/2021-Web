@@ -1,0 +1,45 @@
+﻿<!DOCTYPE  html>
+<html lang="zh-cn">
+   <head>
+      <meta charset="utf-8"/>
+      <title>This is my title</title>
+      <style>
+         #container {
+            width:500px;
+            height:700px;
+            margin:10px auto;
+            padding:1px;
+            background-color: ivory;
+         }
+         #d1{
+            height: 240px;
+            width: 240px;
+            overflow: hidden;
+            border: solid 1px blue;
+            border-radius: 0 0 0 20px;
+            animation: anim1 1.5s, anim2 1.5s 1.5s;
+            transform: translate(130px, 230px) rotate(45deg);
+         }
+         #profile {
+            transform: rotate(-45deg) scale(1.5);
+            width:240px;
+         }
+         @keyframes anim1{
+         0% {transform: translate(130px, 230px) rotate(45deg) scale(0.2); opacity: 0; }
+         100% { transform: translate(130px, 230px) rotate(200deg) scale(0.6); opacity: 0.1;}
+         }
+         @keyframes anim2{
+            0% { transform: translate(130px, 230px) rotate(200deg) scale(0.6); opacity: 0.1;}
+            100% { transform: translate(130px, 230px) rotate(405deg) scale(1); opacity: 1;}
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <div id="d1">
+            <img id="profile" src="images/gyy_profile.jpg">
+         </div>
+      </div>
+    </body>
+</html>
+            
